@@ -30564,39 +30564,40 @@ i=i==null?a0:i.bd(c,e,a0)
 if(i==null)i=new A.bX()
 i.d8(b.gR(b),b.gX(),b.gY(b),b.gZ(b)*a)}else h.mm(c,e,b)}}m.toString
 return m},
-b5Y(a,b,a0){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c=null
-a.giT()
-if(a.glS().h(0,"ifd0").a.ah(0,274)&&a.glS().h(0,"ifd0").ghr(0)!==1)a=A.b5p(a)
-if(b<=0)b=B.c.aY(a0*(a.gb0(0)/a.gbk(0)))
-if(a0<=0)a0=B.c.aY(b*(a.gbk(0)/a.gb0(0)))
-if(a0===a.gbk(0)&&b===a.gb0(0))return A.om(a,!1,!1)
-s=new Int32Array(a0)
-r=a.gbk(0)/a0
-for(q=0;q<a0;++q)s[q]=B.c.q(q*r)
-p=a.ge_().length
-for(o=t.jm,n=c,m=0;m<p;++m){l=a.x
-k=(l===$?a.x=A.b([],o):l)[m]
-j=A.wt(k,b,!0,a0)
-i=n==null
-if(!i)n.hI(j)
-if(i)n=j
-i=k.a
-h=i==null
-g=h?c:i.b
-f=(g==null?0:g)/b
-if((h?c:i.gbp())!=null)for(e=0;e<b;++e){d=B.c.q(e*f)
-for(q=0;q<a0;++q){i=s[q]
-h=k.a
-if(h==null)i=c
-else{i=h.i0(i,d)
-i=B.c.q(i.gbo(i))}if(i==null)i=0
-h=j.a
-if(h!=null)h.he(q,e,i)}}else for(e=0;e<b;++e){d=B.c.q(e*f)
-for(q=0;q<a0;++q){i=s[q]
-h=k.a
-i=h==null?c:h.bd(i,d,c)
-j.mm(q,e,i==null?new A.bX():i)}}}n.toString
-return n},
+b5Y(a0,a1){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a=null
+a0.giT()
+if(a0.glS().h(0,"ifd0").a.ah(0,274)&&a0.glS().h(0,"ifd0").ghr(0)!==1)a0=A.b5p(a0)
+s=B.c.aY(a1*(a0.gb0(0)/a0.gbk(0)))
+if(a1<=0)a1=B.c.aY(s*(a0.gbk(0)/a0.gb0(0)))
+r=s
+if(a1===a0.gbk(0)&&s===a0.gb0(0))return A.om(a0,!1,!1)
+q=new Int32Array(a1)
+p=a0.gbk(0)/a1
+for(o=0;o<a1;++o)q[o]=B.c.q(o*p)
+n=a0.ge_().length
+for(m=t.jm,l=a,k=0;k<n;++k){j=a0.x
+i=(j===$?a0.x=A.b([],m):j)[k]
+h=A.wt(i,s,!0,a1)
+g=l==null
+if(!g)l.hI(h)
+if(g)l=h
+g=i.a
+f=g==null
+e=f?a:g.b
+d=(e==null?0:e)/r
+if((f?a:g.gbp())!=null)for(c=0;c<r;++c){b=B.c.q(c*d)
+for(o=0;o<a1;++o){g=q[o]
+f=i.a
+if(f==null)g=a
+else{g=f.i0(g,b)
+g=B.c.q(g.gbo(g))}if(g==null)g=0
+f=h.a
+if(f!=null)f.he(o,c,g)}}else for(c=0;c<r;++c){b=B.c.q(c*d)
+for(o=0;o<a1;++o){g=q[o]
+f=i.a
+g=f==null?a:f.bd(g,b,a)
+h.mm(o,c,g==null?new A.bX():g)}}}l.toString
+return l},
 uT(a9,b0){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7=null,a8=B.b.aT(b0,360)
 a9.giT()
 if(B.b.aT(a8,90)===0)switch(B.b.b2(a8,90)){case 1:return A.b4X(a9)
@@ -49345,7 +49346,7 @@ awz(a){var s=0,r=A.H(t.R),q,p,o
 var $async$M9=A.D(function(b,c){if(b===1)return A.E(c,r)
 while(true)switch(s){case 0:o=A.aQh(a)
 if(o==null)throw A.d(A.cs("Failed to decode image"))
-p=A.b5Y(o,1024,1024)
+p=A.b5Y(o,1024)
 q=new Uint8Array(A.bi(A.aYh(80).YD(p,B.kV)))
 s=1
 break
